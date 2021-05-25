@@ -18,23 +18,24 @@
   <main>
     <section class="about container">
       <h2 class="section-title">Привет, меня зовут Александр</h2>
-      <img class="about-image" src="img/my-foto.jpg" width="147" height="147" alt="Моя фотография">
+      <img class="about-image" src="img/210.jpg" width="147" height="147" alt="Моя фотография">
       <div class="about-content">
         <p>Начинающий разработчик со специализацией frontend.
           Понимание работы веб-браузеров и сетевого взаимодействия.
           Использование технологий: HTML/CSS, ES6, JS, React, webpack, gulp, gitHub.
           Открыт к новым идеям и практикам.
           Мой github аккаунт:
-          <a href="https://github.com/kurilch">AleksandrKurilenko</a>
-          
+          <a href="https://github.com/kurilch" target="_blank">AleksandrKurilenko</a>
+
         </p>
         <p>Изучаю Веб-разработку с июня 2020 по настоящее время.
           Увлекаюсь различными видами спорта, а также киберспортом. Женат, есть дочь.
           Веду здоровый образ жизни без вредных привычек. Английский на уровне чтения документации.
         </p>
-        <p>В настоящее время прохожу обучение в <a href="https://htmlacademy.ru">HTMLACADEMY</a></p>
+        <p>В настоящее время прохожу обучение в <a href="https://htmlacademy.ru" target="_blank">HTMLACADEMY</a></p>
       </div>
     </section>
+  
     <section class="status container">
       <h2 class="section-title">Мой статус</h2>
       <p>Начинающий Фронтенд разработчик</p>
@@ -45,6 +46,40 @@
       <p><i>email:</i> <a href="mailto:kurilchnaprimer@gmail.com">kurilchnaprimer@gmail.com</a></p>
       <p><i>телефон:</i> <a href="tel:+79777482629">+79777482629</a></p>
     </section>
+    <section>
+      <div class="accordion">
+        <button type="button" class="accordion-button">Здесь можно</button>
+        <div class="accordion-content" tabindex="-1">
+          <img src="./img/23102011074.JPG" alt="" width="100%" height="100%" alt="фотография где изображён я">
+          </img>
+        </div>
+        <button type="button" class="accordion-button">увидеть немного</button>
+        <div class="accordion-content" tabindex="-1">
+          <img src="./img/x_2c89aa3d.jpg" alt="" width="100%" height="100%" alt="фотография где изображён я">
+          </img>
+        </div>
+        <button type="button" class="accordion-button">моих фотографий</button>
+        <div class="accordion-content" tabindex="-1">
+          <img src="./img/x_cafc44c6.jpg" alt="" width="100%" alt="фотография где изображён я">
+          </img>
+        </div>
+      </div>
+    </section>
+    <div class="title-form container">
+      <h3>Вы можете отправить мне свои данные, и я свяжусь с вами</h3>
+    </div>
+    <form class="form container" action="send.php" method="POST">
+      <label class="form__label" for="name"></label>
+      <input class="form__text" type="text" name="name" id="name" placeholder="Укажите Ваше имя">
+
+      <label class="form__label" for="phone-number"></label>
+      <input class="form__tel" type="tel" name="phone" id="phone-number" placeholder="Номер телефона, пожалуйста">
+
+      <label class="form__label form__label-caption" for="email"></label>
+      <input class="form__email" type="email" name="email" id="email" placeholder="Введите почту *" required="">
+
+      <button type="submit" class="form__submit">отправить</button>
+    </form>
   </main>
   <footer class="page-footer">
     <div class="container">
@@ -52,6 +87,7 @@
       <p>2021</p>
     </div>
   </footer>
+  <script src="main.js"></script>
 </body>
 
 </html>
