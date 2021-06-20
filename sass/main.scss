@@ -1,0 +1,79 @@
+main {
+	h2 {
+		font-family: "Whitney";
+		font-style: normal;
+		font-weight: 600;
+		font-size: 40px;
+		line-height: 52px;
+		color: #2E2D35;
+		padding-left: 9px;
+		margin-bottom: 49px;
+	}
+}
+
+.page-main {
+	display: grid;
+	justify-items: stretch;
+	grid-template-columns: 1fr;
+	grid-gap: 30px;
+	margin-bottom: 130px;
+
+	@media (min-width: 1200px) {
+		grid-template-columns: auto auto;
+		margin-bottom: 130px;
+	}
+
+}
+
+.page-main__content {
+	display: grid;
+	grid-template-columns: 1fr;
+	width: 100%;
+	min-height: auto;
+	background: #F6F5F9;
+	border-radius: 6px;
+
+	@media (min-width: 1200px) {
+		grid-template-columns: auto auto;
+		width: 570px;
+		padding-bottom: 22px;
+	}
+
+	img {
+		padding-top: 20px;
+		padding-left: 20px;
+	}
+
+	p {
+		width: 100%;
+		font-family: "SegoeUI";
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 23px;
+		color: #474351;
+
+		@media (min-width: 660px) {
+			font-size: 26px;
+		}
+
+		@media (min-width: 1200px) {
+			width: 300px;
+			font-size: 16px;
+		}
+	}
+
+	h3 {
+		font-family: "SegoeUI";
+		font-style: normal;
+		font-weight: 600;
+		font-size: 22px;
+		line-height: 29px;
+		color: #2E2D35;
+	}
+}
+
+.content-text {
+	padding-top: 22px;
+	padding-left: 40px;
+}

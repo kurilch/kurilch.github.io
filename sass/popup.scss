@@ -1,0 +1,204 @@
+.popup-authorization {
+    position: fixed;
+    display: none;
+    width: 280px;
+    background: #ffffff;
+    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    left: 50%;
+    top: 50%;
+    margin-left: -140px;
+    margin-top: -168px;
+
+    z-index: 10;
+
+    @media (min-width: 1200px) {
+        width: 490px;
+        height: 472px;
+        margin-left: -204px;
+        margin-top: -275px;
+    }
+}
+
+.popup-authorization__show {
+    display: block;
+    animation: bounce .6s;
+}
+
+.popup-authorization__block {
+    position: relative;
+    display: flex;
+    padding: 22px 10px 15px;
+
+    @media (min-width: 1200px) {
+        padding: 62px 60px 105px;
+    }
+}
+
+.popup-authorization__form {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+
+    @media (min-width: 1200px) {
+        padding: 0;
+    }
+}
+
+.popup-authorization__title {
+    align-self: center;
+    font-family: "Whitney";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 52px;
+    text-align: center;
+    color: #2E2D35;
+    margin-top: 45px;
+    margin-bottom: 0;
+
+    @media (min-width: 1200px) {
+        margin-top: 0;
+        margin-bottom: 45px;
+
+    }
+}
+
+.form-email,
+.form-password {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form-email__field {
+    width: 240px;
+    height: 35px;
+
+    @media (min-width: 1200px) {
+        width: 370px;
+        height: 50px;
+    }
+}
+
+.form-email {
+    margin-bottom: 10px;
+
+    @media (min-width: 1200px) {
+        margin-bottom: 34px;
+    }
+
+    input {
+        font-style: normal;
+        font-weight: 325;
+        font-size: 16px;
+    }
+
+    label {
+        font-family: "Whitney";
+        font-style: normal;
+        font-weight: 350;
+        font-size: 18px;
+        line-height: 24px;
+        color: #474351;
+    }
+}
+
+.form-password input {
+    width: 240px;
+    height: 35px;
+    font-weight: 325;
+    font-size: 16px;
+    margin-bottom: 15px;
+
+    @media (min-width: 1200px) {
+        width: 370px;
+        height: 50px;
+        margin-bottom: 35px;
+    }
+}
+
+.form-password label {
+    font-family: "Whitney";
+    font-style: normal;
+    font-weight: 350;
+    font-size: 18px;
+    line-height: 24px;
+    color: #474351;
+}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 60px;
+    left: 808px;
+    top: 1141px;
+    background: #F25B24;
+    border-radius: 4px;
+    cursor: pointer;
+
+    @media (min-width: 1200px) {
+        width: 370px;
+        height: 50px;
+    }
+}
+
+.btn:hover {
+    opacity: 0.5;
+}
+
+.popup-authorization__close {
+    position: absolute;
+    top: 22px;
+    right: 22px;
+    width: 55px;
+    height: 55px;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: .5;
+}
+
+.popup-authorization__close::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2px;
+    height: 30px;
+    background-color: #000000;
+    -webkit-transform: translate(-50%, -50%) rotate(45deg);
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.popup-authorization__close::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2px;
+    height: 30px;
+    background-color: #000000;
+    -webkit-transform: translate(-50%, -50%) rotate(135deg);
+    transform: translate(-50%, -50%) rotate(135deg);
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(-2000px);
+    }
+
+    70% {
+        transform: translateY(30px);
+    }
+
+    90% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}

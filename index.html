@@ -2,92 +2,128 @@
 <html lang="ru">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/style.css">
-  <title>Куриленко Александр</title>
+  <title>CARS</title>
+  <!-- <link rel="preload" href="fonts/Whitney-Light.woff" as="font" type="font/woff">
+  <link rel="preload" href="fonts/Whitney-Medium.woff" as="font" type="font/woff">
+  <link rel="preload" href="fonts/Whitney-Bold.woff" as="font" type="font/woff">
+  <link rel="preload" href="fonts/SegoeUI-Light.woff" as="font" type="font/woff">
+  <link rel="preload" href="fonts/SegoeUI.woff" as="font" type="font/woff">
+  <link rel="preload" href="fonts/SegoeUI-Bold.woff" as="font" type="font/woff"> -->
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body class="page">
-  <header class="page-header">
-    <div class="container">
-      <h1 class="page-title">Мой сайт</h1>
-      <p><i>По всем вопросам пишите:</i><br><a href="mailto:kurilchnaprimer@gmail.com">kurilchnaprimer@gmail.com</a></p>
-    </div>
+<body>
+
+  <header class=page-header>
+
+    <nav class="page-header__nav container">
+      <a class="as" href="#">
+        <img src="./img/Group102.svg" alt="логотип фирмы и ссылка на главную страницу" width="147" height="32">
+      </a>
+      <div class="nav-menu">
+        <a class="nav-menu__client" href="#">Клиентам</a>
+        <a class="nav-menu__sign" href="#">Войти</a>
+      </div>
+    </nav>
+
+    <section class="page-header__section">
+      <div>
+        <h1>Подбор авто в лизинг по выгодной цене</h1>
+        <p>IT платформа по быстрому поиску автомобиля<br>
+          от официальных диллеров РФ</p>
+        <button>Регистрация</button>
+      </div>
+      <img src="./img/Frame109.png" class="" alt="изображение мужщины на фоне автомобилей">
+    </section>
+
   </header>
-  <main>
-    <section class="about container">
-      <h2 class="section-title">Привет, меня зовут Александр</h2>
-      <img class="about-image" src="img/210.jpg" width="147" height="147" alt="Моя фотография">
-      <div class="about-content">
-        <p>Начинающий разработчик со специализацией frontend.
-          Понимание работы веб-браузеров и сетевого взаимодействия.
-          Использование технологий: HTML/CSS, ES6, JS, React, webpack, gulp, gitHub.
-          Открыт к новым идеям и практикам.
-          Мой github аккаунт:
-          <a href="https://github.com/kurilch" target="_blank">AleksandrKurilenko</a>
 
-        </p>
-        <p>Изучаю Веб-разработку с июня 2020 по настоящее время.
-          Увлекаюсь различными видами спорта, а также киберспортом. Женат, есть дочь.
-          Веду здоровый образ жизни без вредных привычек. Английский на уровне чтения документации.
-        </p>
-        <p>В настоящее время прохожу обучение в <a href="https://htmlacademy.ru" target="_blank">HTMLACADEMY</a></p>
+  <main class="container">
+    <h2 class="">Меньше условий - больше возможностей</h2>
+    <section class="page-main">
+
+      <div class="page-main__content">
+        <div class="content-text">
+          <h3>Экономия времени</h3>
+          <p>Дополнительный канал<br> потенциальных клиентов, готовых приобрести автомобиль,
+            без затрат<br> на рекламу и маркетинг.</p>
+        </div>
+        <img src="./img/Time.svg" alt="изображение мужщины на фоне песочных часов">
+      </div>
+
+      <div class="page-main__content">
+        <div class="content-text">
+          <h3>Никаких задержек</h3>
+          <p>Вы получаете запросы сразу же<br> после отправки клиентом.</p>
+        </div>
+        <img src="./img/Speed.svg" alt="изображение мужщины читающего письмо">
+      </div>
+
+      <div class="page-main__content">
+        <div class="content-text">
+          <h3>Максимальная<br> информативность</h3>
+          <p>В каждой заявке указан регион поиска, марка и модель авто,
+            а так же индивидуальные запросы клиента.</p>
+        </div>
+        <img src="./img/Information.svg" alt="изображение мужщины работающего за компьютером">
+      </div>
+
+      <div class="page-main__content">
+        <div class="content-text">
+          <h3>Удобство общения</h3>
+          <p>Для каждого запроса у вас открыт<br> чат
+            с клиентом с возможностью отправки документов.</p>
+        </div>
+        <img src="./img/Chat.svg" alt="изображение общающегося мужщины">
       </div>
     </section>
-  
-    <section class="status container">
-      <h2 class="section-title">Мой статус</h2>
-      <p>Начинающий Фронтенд разработчик</p>
-    </section>
-    <section class="contacts container">
-      <h2 class="section-title">Контакты для связи</h2>
-      <p class="contacts-name">Куриленко Александр</p>
-      <p><i>email:</i> <a href="mailto:kurilchnaprimer@gmail.com">kurilchnaprimer@gmail.com</a></p>
-      <p><i>телефон:</i> <a href="tel:+79777482629">+79777482629</a></p>
-    </section>
-    <section>
-      <div class="accordion">
-        <button type="button" class="accordion-button">Здесь можно</button>
-        <div class="accordion-content" tabindex="-1">
-          <img src="./img/23102011074.JPG" alt="" width="100%" height="100%" alt="фотография где изображён я">
-          </img>
-        </div>
-        <button type="button" class="accordion-button">увидеть немного</button>
-        <div class="accordion-content" tabindex="-1">
-          <img src="./img/x_2c89aa3d.jpg" alt="" width="100%" height="100%" alt="фотография где изображён я">
-          </img>
-        </div>
-        <button type="button" class="accordion-button">моих фотографий</button>
-        <div class="accordion-content" tabindex="-1">
-          <img src="./img/x_cafc44c6.jpg" alt="" width="100%" alt="фотография где изображён я">
-          </img>
-        </div>
-      </div>
-    </section>
-    <div class="title-form container">
-      <h3>Вы можете отправить мне свои данные, и я свяжусь с вами</h3>
-    </div>
-    <form class="form container" action="send.php" method="POST">
-      <label class="form__label" for="name"></label>
-      <input class="form__text" type="text" name="name" id="name" placeholder="Укажите Ваше имя">
 
-      <label class="form__label" for="phone-number"></label>
-      <input class="form__tel" type="tel" name="phone" id="phone-number" placeholder="Номер телефона, пожалуйста">
-
-      <label class="form__label form__label-caption" for="email"></label>
-      <input class="form__email" type="email" name="email" id="email" placeholder="Введите почту *" required="">
-
-      <button type="submit" class="form__submit">отправить</button>
-    </form>
   </main>
-  <footer class="page-footer">
-    <div class="container">
-      <p>© Куриленко Александр</p>
-      <p>2021</p>
-    </div>
+
+  <footer class="page-footer container">
+    <section class="page-footer__section">
+      <div class="page-footer__registration">
+        <h2>Регистрируйся и получай<br> актуальные запросы
+          на автомобили<br> от заинтерисованных клиентов</h2>
+        <button>Регистрация</button>
+      </div>
+      <img src="./img/Group55.png" alt="изображение автомобилей на фоне мировой карты">
+    </section>
   </footer>
-  <script src="main.js"></script>
+
+  <section class="popup-authorization">
+
+
+    <div class="popup-authorization__block">
+
+      <form class="popup-authorization__form" method="post" action="#">
+        <h2 class="popup-authorization__title">Авторизация</h2>
+        <div class="form-email">
+          <label for="user-email">E-mail:</label>
+          <input class="form-email__field" type="email" id="user-email" name="user-email" required
+            placeholder="Введите e-mail">
+        </div>
+
+        <div class="form-password">
+          <label for="user-password">Пароль</label>
+          <input id="user-password" name="user-password" type="password" required placeholder="Введите пароль">
+        </div>
+
+        <button class="btn" type="submit" name="send">Войти</button>
+
+      </form>
+
+      <button class="popup-authorization__close" type="button" name="close" aria-label="закрыть">
+
+      </button>
+
+    </div>
+
+  </section>
+  <script src="./js/index.js"></script>
 </body>
 
 </html>

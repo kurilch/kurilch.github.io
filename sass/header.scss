@@ -1,0 +1,174 @@
+.page-header {
+    height: auto;
+    background: linear-gradient(90deg, #2D1686 0%, #4E33B5 100%);
+
+    @media (min-width: 1200px) {
+        height: 700px;
+        margin-bottom: 131px;
+    }
+}
+
+.page-header__nav {
+    display: flex;
+    flex-direction: column;
+    height: 98px;
+    justify-content: space-between;
+
+    @media (min-width: 1200px) {
+        flex-direction: row;
+    }
+
+    a {
+        font-family: "Whitney";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 325;
+        line-height: 23px;
+        text-align: left;
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    .as {
+        padding-left: 10px;
+        padding-top: 33px;
+    }
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 39px;
+}
+
+.nav-menu__sign {
+    position: relative;
+    padding-left: 40px;
+}
+
+.nav-menu__client:hover,
+.as:hover,
+.nav-menu__sign:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.nav-menu__client {
+    padding-right: 100px;
+}
+
+.nav-menu__sign::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/account1.svg");
+    left: 0%;
+    right: 71.08%;
+    top: 0%;
+    bottom: 0%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+h1 {
+    font-family: "Whitney";
+    font-style: normal;
+    width: 100%;
+    height: auto;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 60px;
+    text-align: left;
+    margin-bottom: 30px;
+
+    @media (min-width: 1200px) {
+        width: 499px;
+        height: 120px;
+        margin-bottom: 4px;
+    }
+}
+
+.page-header__section {
+    display: flex;
+    color: #ffffff;
+    width: 320px;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-top: 60px;
+
+    @media (min-width: 660px) {
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 600px;
+    }
+
+    @media (min-width: 1200px) {
+        flex-direction: row;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 1200px;
+    }
+
+    p {
+        font-family: "Whitney";
+        font-style: normal;
+        font-weight: 350;
+        font-size: 24px;
+        line-height: 31px;
+        letter-spacing: 0px;
+        margin-bottom: 30px;
+
+        @media (min-width: 1200px) {
+            margin-bottom: 58px;
+        }
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+        width: 100%;
+        margin-bottom: 15px;
+        padding: 0 15px;
+
+
+        @media (min-width: 1200px) {
+            padding-left: 0;
+            position: relative;
+            width: auto;
+        }
+    }
+
+    img {
+        padding: 0 15px;
+
+        @media (min-width: 1200px) {
+           overflow: hidden;
+        }
+    }
+
+    button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 16px 60px;
+        width: 222px;
+        height: 50px;
+        left: 375px;
+        top: 470px;
+        background: #F25B24;
+        border-radius: 4px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 100%;
+        text-align: center;
+        color: #FFFFFF;
+        cursor: pointer;
+    }
+
+    button:hover {
+        opacity: 0.5;
+    }
+
+}
